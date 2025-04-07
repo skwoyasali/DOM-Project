@@ -1,0 +1,87 @@
+
+/* General styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #dee9f3;
+    text-align: center;
+}
+/* Styling for the header section */
+
+header {
+    background: #292c46;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Styling for the form and student list sections */
+
+.form-container, .student-list {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for input fields inside the form */
+
+form input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Styling for the Add student button */
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #28a746c2;
+}
+
+/* Table styling for student records */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th {
+    background: #333;
+    color: white;
+}
+
+/* Styling for Edit and Delete buttons */
+
+.edit, .delete {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.edit { background: #ffc107; }
+.delete { background: #dc3545; color: white; }
+
+/* Makes the student list section scrollable when needed */
+
+.student-list {
+    max-height: 300px;  /* Set a fixed height */
+    overflow-y: hidden; /* Initially hidden, JavaScript will toggle it */
+    border: 1px solid #ccc;
+}
